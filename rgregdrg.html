@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дайвинг клуб</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero {
+            background-color: #034b7a;
+            color: white;
+            padding: 4rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-img {
+            position: absolute;
+            right: -1rem;
+            bottom: -2rem;
+            height: 100%;
+            max-width: 50%;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                text-align: center;
+            }
+            .hero-img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">DIVERS.</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">HOME</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">PAGES</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">BLOG</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">GALLERY</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">ELEMENTS</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">CONTACTS</a>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Наслаждайтесь дайвингом с нами</h1>
+            <p class="text-xl max-w-lg mb-8">
+                Мы предлагаем широкий выбор туров и локаций для дайвинга, подходящих для всех.
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-white text-blue-800 py-3 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition duration-300">ОТКРЫТЬ</button>
+                <button class="text-white border-2 border-white py-3 px-6 rounded-full font-semibold hover:bg-white hover:text-blue-800 transition duration-300">ПОДРОБНЕЕ</button>
+            </div>
+        </div>
+        <img src="./image 1.png" alt="Счастливый дайвер" class="hero-img hidden md:block">
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Направления</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Rectangle 3 (1).png" alt="Мальдивы" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Мальдивы</h3>
+                        <p class="text-gray-600 mb-4">Богатство морской жизни</p>
+                        <button class="text-blue-600 font-medium hover:underline">ЗАБРОНИРОВАТЬ СЕЙЧАС</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Rectangle 4 (1).png" alt="Индонезия" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Индонезия</h3>
+                        <p class="text-gray-600 mb-4">Уникальное морское разнообразие</p>
+                        <button class="text-blue-600 font-medium hover:underline">ЗАБРОНИРОВАТЬ СЕЙЧАС</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Rectangle 5 (1).png" alt="Австралия" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Австралия</h3>
+                        <p class="text-gray-600 mb-4">Лучшее место для дайвинга</p>
+                        <button class="text-blue-600 font-medium hover:underline">ЗАБРОНИРОВАТЬ СЕЙЧАС</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Наш блог</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Rectangle 7 (1).png" alt="Лагуна" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">Август 9, 2023</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Новый дайвинг: Лагуна всех</h3>
+                        <p class="text-gray-600">
+                            Как и раньше, в первый раз это всегда незабываемо...
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium mt-4 inline-block hover:underline">Подробнее</a>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Rectangle 8 (1).png" alt="Окинава" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">Август 9, 2023</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Дайвинг на Окинаве: первый опыт</h3>
+                        <p class="text-gray-600">
+                            Это одно из тех мест, куда нужно отправиться, если...
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium mt-4 inline-block hover:underline">Подробнее</a>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./Rectangle 9.png" alt="Мауи" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500 mb-2">Август 9, 2023</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Дайвинг на Мауи и Большом острове</h3>
+                        <p class="text-gray-600">
+                            Гавайский архипелаг полон подводных приключений, таких как...
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium mt-4 inline-block hover:underline">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Галерея</h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <img src="./Rectangle 14.png" alt="Галерея" class="w-full h-full object-cover rounded-lg">
+                    <img src="./Rectangle 15.png" alt="Галерея" class="w-full h-full object-cover rounded-lg">
+                    <img src="./Rectangle 16.png" alt="Галерея" class="w-full h-full object-cover rounded-lg">
+                    <img src="./Rectangle 17.png" alt="Галерея" class="w-full h-full object-cover rounded-lg">
+                    <img src="./Rectangle 18.png" alt="Галерея" class="w-full h-full object-cover rounded-lg">
+                    <img src="./Rectangle 19.png" alt="Галерея" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Быстрые ссылки</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition duration-300">О нас</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-300">Что мы предлагаем</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-300">FAQ</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-300">Инструкторы</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Контакты</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition duration-300">Связаться с нами</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-300">Блог</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-300">Галерея</a></li>
+                    <li><a href="#" class="hover:text-white transition duration-300">Цены</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Новости</h3>
+                <p>
+                    Подпишитесь на нашу рассылку, чтобы получать последние новости и предложения.
+                </p>
+                <input type="email" placeholder="Введите ваш email" class="w-full p-2 mt-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            © 2023 DIVERS. Все права защищены. <a href="#" class="hover:underline">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+</body>
+</html>
